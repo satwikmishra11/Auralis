@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auralis: Real-Time Object Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="animated-header">
+            <h1>Welcome to <span class="highlight">Auralis</span></h1>
+            <p>Real-Time Object Detection using AI</p>
+        </header>
+        
+        <main>
+            <div class="webcam-container">
+                <video id="webcam" autoplay playsinline></video>
+                <canvas id="overlay"></canvas>
+                <div id="detection-results" class="animated-results"></div>
+            </div>
+
+            <section class="info-section">
+                <h2>Our Solution</h2>
+                <p>Real-time object detection powered by **Teachable Machine**, detecting **person, cell phone, bottle, and laptops**.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Auralis © 2024 | Empowering Vision</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object & Sign Language Detection App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Welcome to Auralis</h1>
+        <p class="subtitle">Detect objects and sign language gestures with AI-powered technology</p>
+        <div id="wave"></div>
+
+        <!-- New button to start the Python script -->
+        <button id="startButton">Start Object & Sign Language Detection</button>
+        <p id="output"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.getElementById('startButton').addEventListener('click', () => {
+            fetch('/run-python', { method: 'POST' })
+                .then(response => response.text())
+                .then(output => {
+                    document.getElementById('output').innerText = output;
+                })
+                .catch(error => {
+                    document.getElementById('output').innerText = `Error: ${error}`;
+                });
+        });
+    </script>
+</body>
+</html>

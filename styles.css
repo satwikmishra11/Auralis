@@ -1,0 +1,156 @@
+/* Styles for the entire page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #f3f3f3, #ffffff);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.highlight {
+    color: #e74c3c;
+    font-style: italic;
+    animation: pulseText 2s infinite;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.webcam-container {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-in-out;
+}
+
+#webcam {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    filter: brightness(1.1);
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.animated-results {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: 2px solid #4CAF50;
+    animation: blinkBorder 1.5s infinite;
+    font-weight: bold;
+}
+
+.info-section {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 800px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes blinkBorder {
+    0% {
+        border-color: #4CAF50;
+    }
+    50% {
+        border-color: #e74c3c;
+    }
+    100% {
+        border-color: #4CAF50;
+    }
+}
+
+@keyframes pulseText {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,41 @@
+body {
+    background-color: #abafc1;
+
+    background-size: 100%;
+
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* Button Styles */
+#startButton {
+    padding: 15px 30px;                  /* Padding for the button */
+    font-size: 1.2rem;                   /* Font size */
+    color: #ffffff;                       /* Text color */
+    background-color: #007bff;           /* Button background color (blue) */
+    border: none;                         /* Remove default border */
+    border-radius: 5px;                  /* Rounded corners */
+    cursor: pointer;                      /* Change cursor on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect */
+#startButton:hover {
+    background-color: #0056b3;           /* Darker blue on hover */
+    transform: translateY(-2px);         /* Slight lift effect on hover */
+}
+
+/* Active effect */
+#startButton:active {
+    transform: translateY(0);             /* Reset lift on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow less intense when clicked */
+}
+
+/* Focus effect for accessibility */
+#startButton:focus {
+    outline: none;                        /* Remove default focus outline */
+    box-shadow: 0 0 5px #007bff;        /* Add blue glow effect when focused */
+}
