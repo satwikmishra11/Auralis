@@ -70,6 +70,7 @@ License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Contact
-For any inquiries or support, feel free to reach out at:
-Email: satwikmishra46@gmail.com|\
+For any inquiries or support,\
+feel free to reach out at:
+Email: satwikmishra46@gmail.com\
 GitHub: satwikmishra11
