@@ -1,4 +1,4 @@
-#Auralis: Real-Time Object Detection
+<h1>Auralis: Real-Time Object Detection</h1>h1>
 Empowering Vision with AI-Powered Real-Time Object Detection
 Auralis is a web-based application designed to detect objects in real-time using a webcam. Powered by Google's Teachable Machine and TensorFlow.js, Auralis recognizes four objects: person, cell phone, bottle, and laptops. This project aims to assist users by identifying objects in the camera's view and providing immediate visual feedback.
 
@@ -71,5 +71,5 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 Contact
 For any inquiries or support, feel free to reach out at:
-Email: your.email@example.com
-GitHub: yourusername
+Email: satwikmishra46@gmail.com/
+GitHub: satwikmishra11
