@@ -71,5 +71,5 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 Contact
 For any inquiries or support, feel free to reach out at:
-Email: satwikmishra46@gmail.com/
+Email: satwikmishra46@gmail.com|\
 GitHub: satwikmishra11
